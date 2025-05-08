@@ -1,0 +1,2 @@
+# Contact
+This is a simple and handy Progressive Web App (PWA) that lets you manage your phone contacts right in your browser or as an installed app on your device. You can easily view your contact list, search for specific contacts by name or phone number, and quickly initiate a call with a single tap. 1  You can also add new contacts to your list and create or restore backups of your contact data for safekeeping. Because it's a PWA, it offers a fast, app-like experience and can even work offline after the initial load. 
