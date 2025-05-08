@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>Contacts</h1>
+        <button id="installButton" style="display: none;">Install App</button>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search contacts...">
+        </div>
+        <h2>Add New Contact</h2>
+        <form id="addContactForm">
+            <div class="form-group">
+                <label for="newName">Name:</label>
+                <input type="text" id="newName" required>
+            </div>
+            <div class="form-group">
+                <label for="newPhone">Phone:</label>
+                <input type="tel" id="newPhone" required>
+            </div>
+            <button type="submit">Add Contact</button>
+        </form>
+
+        <div class="backup-actions">
+            <h2>Backup & Restore</h2>
+            <button id="downloadBackup">Download Backup</button>
+            <input type="file" id="restoreBackup" accept=".json" style="display: none;">
+            <button id="restoreBackupButton">Restore Backup</button>
+        </div>
+        <ul id="contactList">
+            </ul>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Register service worker (optional, for PWA features)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+</body>
+</html>
