@@ -49,7 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load contacts from local storage or use initial data
     let contacts = JSON.parse(localStorage.getItem('contacts')) || [
+        { name: 'Police (Kerala)', phone: '100' },
+        { name: 'Fire Force (Kerala)', phone: '112' },
+        { name: 'Ambulance (Kerala)', phone: '108' },
         { name: 'App Support ( Syam )', phone: '7510726715' }
+        
         // Add more initial contacts here if needed
     ];
 
